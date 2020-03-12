@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+	<form method="" action="">
+		<label for="inputName">Name:</label>
+		<input type="text" name="name" id="inputName" required>
+		<br>
+		<label for="inputEmail" >Email: </label>
+		<input type="email" name="email" id="inputEmail" required>
+		<br>
+		<label for="inputAge">Age:</label>
+		<input type="number" name="age" id="inputAge" step="5">
+		<br>
+		<label for="inputAddress">Address:</label>
+		<textarea id="inputAddress" name="address" rows="4" required=""></textarea>
+		<br>
+		<input type="hidden" name="oldvalue" value="mgmg">
+		<br>
+		<label>Gender</label>
+		<input type="radio" name="gender" value="male" id="inputMale" checked><label for="inputMale">Male</label>
+		<input type="radio" name="gender" value="female" id="inputFemale"><label for="inputFemale">Female</label>
+		<br>
+		<label >Hobbies:</label>
+		<br>
+		<input type="checkbox" name="hobbies[]" value="reading"><label>Reading</label>
+		<br>
+		<input type="checkbox" name="hobbies[]" value="football"><label>FootBall</label>
+		<br>
+		<input type="checkbox" name="hobbies[]" value="dancing"><label>Dancing</label>
+		<label for="inputYear">Acedamic Year</label>
+		<select name="acedamic_year">
+			<optgroup label="Choose Acedamic Year">
+				<option value="1">First Year</option>
+				<option value="2" selected>Second Year</option>
+				<option value="3">Third Year</option>
+			</optgroup>
+			
+		</select>
+		<br>
+		<label for="inputProfile">Profile:</label>
+		<input type="file" name="profile[]" multiple accept="image/*">
+		<br>
+		<input type="submit" name="btnsubmit" value="Save">
+		<input type="reset" name="btnreset" value="Cancel">
+
+	</form>
+
+</body>
+</html>
